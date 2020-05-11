@@ -1,0 +1,40 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: black;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 1.3em;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px #000000;
+    animation-delay: 0.5s;
+    animation: blink 6s alternate-reverse infinite;
+  }
+  
+  div {
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    border: 6px solid;
+    box-shadow: 0 0 60px #0dcef0, inset 0 0 40px #b40ff5;
+    animation: blink 6s alternate infinite;
+    animation-delay: 3s;
+  }
+  
+  
+  @keyframes blink {
+    0%, 2%, 4%, 6%, 30%, 32%, 75%, 77%, 100% {opacity: 1}
+     3%, 5%, 31%, 76% {opacity: 0.7}
+  }
